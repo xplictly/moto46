@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AE3FD2E12FF4F0B80033A8E6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3FD2E02FF4F0B80033A8E6 /* WidgetKit.framework */; };
+		AE3FD2E32FF4F0B80033A8E6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE3FD2E22FF4F0B80033A8E6 /* SwiftUI.framework */; };
+		AE3FD2F22FF4F0B90033A8E6 /* MotoGPWidgetsExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = AE3FD2DE2FF4F0B80033A8E6 /* MotoGPWidgetsExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		AE3FD2BE2FF4F0180033A8E6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = AE3FD2AD2FF4F0170033A8E6;
 			remoteInfo = moto46;
 		};
+		AE3FD2F02FF4F0B90033A8E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AE3FD2A62FF4F0170033A8E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AE3FD2DD2FF4F0B80033A8E6;
+			remoteInfo = MotoGPWidgetsExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AE3FD2F72FF4F0B90033A8E6 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AE3FD2F22FF4F0B90033A8E6 /* MotoGPWidgetsExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AE3FD2AE2FF4F0170033A8E6 /* moto46.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = moto46.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3FD2BD2FF4F0180033A8E6 /* moto46Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moto46Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3FD2C72FF4F0180033A8E6 /* moto46UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = moto46UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3FD2DE2FF4F0B80033A8E6 /* MotoGPWidgetsExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MotoGPWidgetsExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE3FD2E02FF4F0B80033A8E6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		AE3FD2E22FF4F0B80033A8E6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AE3FD2F32FF4F0B90033A8E6 /* Exceptions for "MotoGPWidgets" folder in "MotoGPWidgetsExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = AE3FD2DD2FF4F0B80033A8E6 /* MotoGPWidgetsExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AE3FD2B02FF4F0170033A8E6 /* moto46 */ = {
@@ -43,6 +83,14 @@
 		AE3FD2CA2FF4F0180033A8E6 /* moto46UITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = moto46UITests;
+			sourceTree = "<group>";
+		};
+		AE3FD2E42FF4F0B80033A8E6 /* MotoGPWidgets */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AE3FD2F32FF4F0B90033A8E6 /* Exceptions for "MotoGPWidgets" folder in "MotoGPWidgetsExtension" target */,
+			);
+			path = MotoGPWidgets;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE3FD2DB2FF4F0B80033A8E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE3FD2E32FF4F0B80033A8E6 /* SwiftUI.framework in Frameworks */,
+				AE3FD2E12FF4F0B80033A8E6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				AE3FD2B02FF4F0170033A8E6 /* moto46 */,
 				AE3FD2C02FF4F0180033A8E6 /* moto46Tests */,
 				AE3FD2CA2FF4F0180033A8E6 /* moto46UITests */,
+				AE3FD2E42FF4F0B80033A8E6 /* MotoGPWidgets */,
+				AE3FD2DF2FF4F0B80033A8E6 /* Frameworks */,
 				AE3FD2AF2FF4F0170033A8E6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				AE3FD2AE2FF4F0170033A8E6 /* moto46.app */,
 				AE3FD2BD2FF4F0180033A8E6 /* moto46Tests.xctest */,
 				AE3FD2C72FF4F0180033A8E6 /* moto46UITests.xctest */,
+				AE3FD2DE2FF4F0B80033A8E6 /* MotoGPWidgetsExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		AE3FD2DF2FF4F0B80033A8E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AE3FD2E02FF4F0B80033A8E6 /* WidgetKit.framework */,
+				AE3FD2E22FF4F0B80033A8E6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				AE3FD2AA2FF4F0170033A8E6 /* Sources */,
 				AE3FD2AB2FF4F0170033A8E6 /* Frameworks */,
 				AE3FD2AC2FF4F0170033A8E6 /* Resources */,
+				AE3FD2F72FF4F0B90033A8E6 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AE3FD2F12FF4F0B90033A8E6 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				AE3FD2B02FF4F0170033A8E6 /* moto46 */,
@@ -163,6 +234,28 @@
 			productReference = AE3FD2C72FF4F0180033A8E6 /* moto46UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		AE3FD2DD2FF4F0B80033A8E6 /* MotoGPWidgetsExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AE3FD2F42FF4F0B90033A8E6 /* Build configuration list for PBXNativeTarget "MotoGPWidgetsExtension" */;
+			buildPhases = (
+				AE3FD2DA2FF4F0B80033A8E6 /* Sources */,
+				AE3FD2DB2FF4F0B80033A8E6 /* Frameworks */,
+				AE3FD2DC2FF4F0B80033A8E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				AE3FD2E42FF4F0B80033A8E6 /* MotoGPWidgets */,
+			);
+			name = MotoGPWidgetsExtension;
+			packageProductDependencies = (
+			);
+			productName = MotoGPWidgetsExtension;
+			productReference = AE3FD2DE2FF4F0B80033A8E6 /* MotoGPWidgetsExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 26.5;
 						TestTargetID = AE3FD2AD2FF4F0170033A8E6;
 					};
+					AE3FD2DD2FF4F0B80033A8E6 = {
+						CreatedOnToolsVersion = 26.5;
+					};
 				};
 			};
 			buildConfigurationList = AE3FD2A92FF4F0170033A8E6 /* Build configuration list for PBXProject "moto46" */;
@@ -203,6 +299,7 @@
 				AE3FD2AD2FF4F0170033A8E6 /* moto46 */,
 				AE3FD2BC2FF4F0180033A8E6 /* moto46Tests */,
 				AE3FD2C62FF4F0180033A8E6 /* moto46UITests */,
+				AE3FD2DD2FF4F0B80033A8E6 /* MotoGPWidgetsExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		AE3FD2C52FF4F0180033A8E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE3FD2DC2FF4F0B80033A8E6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AE3FD2DA2FF4F0B80033A8E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = AE3FD2AD2FF4F0170033A8E6 /* moto46 */;
 			targetProxy = AE3FD2C82FF4F0180033A8E6 /* PBXContainerItemProxy */;
+		};
+		AE3FD2F12FF4F0B90033A8E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AE3FD2DD2FF4F0B80033A8E6 /* MotoGPWidgetsExtension */;
+			targetProxy = AE3FD2F02FF4F0B90033A8E6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -523,6 +639,66 @@
 			};
 			name = Release;
 		};
+		AE3FD2F52FF4F0B90033A8E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotoGPWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MotoGPWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maanas.moto46.MotoGPWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AE3FD2F62FF4F0B90033A8E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotoGPWidgets/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MotoGPWidgets;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = maanas.moto46.MotoGPWidgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -558,6 +734,15 @@
 			buildConfigurations = (
 				AE3FD2D82FF4F0180033A8E6 /* Debug */,
 				AE3FD2D92FF4F0180033A8E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AE3FD2F42FF4F0B90033A8E6 /* Build configuration list for PBXNativeTarget "MotoGPWidgetsExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AE3FD2F52FF4F0B90033A8E6 /* Debug */,
+				AE3FD2F62FF4F0B90033A8E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
